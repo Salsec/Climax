@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.gs.climaxrepoport.controller.RapportController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Rapport Statistique des Clients" style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+    <HBox spacing="10.0" alignment="CENTER">
+        <Button text="Importer un fichier" onAction="#onImportButtonClick"/>
+        <Label fx:id="fileNameLabel" text="Aucun fichier sélectionné" />
+    </HBox>
+    <Button fx:id="moyenneSalaireButton" text="Afficher Moyenne des Salaires par Profession" onAction="#onShowAverageSalaryByProfession"/>
+    <VBox alignment="CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+        <TableView fx:id="rapportTable" prefHeight="300" prefWidth="500" style="-fx-alignment: center;">
+            <columns>
+                <TableColumn text="Nom" fx:id="nomColumn" prefWidth="150"/>
+                <TableColumn text="Prénom" fx:id="prenomColumn" prefWidth="150"/>
+                <TableColumn text="Âge" fx:id="ageColumn" prefWidth="50"/>
+                <TableColumn text="Profession" fx:id="professionColumn" prefWidth="150"/>
+                <TableColumn text="Salaire" fx:id="salaireColumn" prefWidth="100"/>
+            </columns>
+        </TableView>
+        <Label fx:id="totalLabel" text="Total: 0 éléments" style="-fx-background-color: #0078D4; -fx-text-fill: white; -fx-padding: 5px; -fx-border-radius: 10px; -fx-background-radius: 10px;"/>
+    </VBox>
+</VBox>
