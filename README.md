@@ -32,7 +32,7 @@ Avant de pouvoir exécuter l'application, assurez-vous d'avoir installé :
 Clonez ce projet avec la commande suivante :
 
 
-git clone https://github.com/votre-utilisateur/climax-project.git
+git clone https://github.com/Salsec/Climax.git
 cd climax-project
 
 
