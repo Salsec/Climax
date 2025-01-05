@@ -41,3 +41,8 @@ cd climax-project
 
 - **Installation des dépendances** : La section "Installer les dépendances" a été ajoutée pour expliquer comment utiliser Maven pour installer les dépendances nécessaires.
 - **Démarrage** : Les sections de démarrage avec Maven et Docker ont été précisées. La commande `mvn clean install` est utilisée pour télécharger les dépendances, tandis que `mvn javafx:run` démarre l'application localement. Le Dockerfile permet de construire et d'exécuter l'application dans un conteneur Docker, facilitant ainsi le déploiement.
+
+  
+### Explication de l'ajout :
+- **NB : Fichiers de données** : J'ai ajouté une note sous la section "Conclusion" pour préciser que les fichiers de données se trouvent dans le dossier `resources` du projet, afin que les utilisateurs puissent facilement les retrouver ou les ajouter eux-mêmes.
+
